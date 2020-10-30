@@ -26,4 +26,4 @@ https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio
         user:
             update the data
         app:
-            will crawl for the latest data from web and stores it in sqlite3 database 
+            will crawl the web for the latest data and stores it in sqlite3 database 

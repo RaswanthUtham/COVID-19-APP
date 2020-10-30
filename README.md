@@ -1,6 +1,6 @@
 # COVID-19-APP
 
-## Requires packages
+## Dependencies (install the below modules)s
 
     scrapy
     scrapy-user-agents
@@ -10,6 +10,14 @@
     pyaudio (use this below link if pip didn't work)
 https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio
 
-## input data
+## Project Definition
 
-     Get the data using python scrapy module from a website. Code is in required_data dir.
+    corona bot will wait for user to ask questions, converts it from speech to text, processes it and gives the answer.
+    example:
+        user:
+            (asks) how many people died due to corona in India
+        app: 
+            (will read out the data) 1 lakh people died
+    how it works:  
+        got the input data from web through scrapy framework
+        used speechrecognition and pyttsx3 to get input and read the output to user 

@@ -20,4 +20,10 @@ https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio
             (will read out the data) 1 lakh people died
     how it works:  
         got the input data from web through scrapy framework
-        used speechrecognition and pyttsx3 to get input and read the output to user 
+        used speechrecognition and pyttsx3 to get input and read the output to user
+        
+## update in database:
+        user:
+            update the data
+        app:
+            will crawl for the latest data from web and stores it in sqlite3 database 

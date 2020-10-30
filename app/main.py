@@ -90,12 +90,13 @@ def main():
     # patterns
     new = re.compile(r".*new.*")
     case = re.compile(r".*case.*")
-    death = re.compile(r".*death.*")
+    death = re.compile(r".*death.*|.*die.*")
     active = re.compile(r".*active.*")
     recover = re.compile(r".*recover.*")
     normal = re.compile(r".*normal.*|.*health.*")
     critical = re.compile(r".*critical.*|.*serious.*")
     closed = re.compile(r".*close.*")
+    update = re.compile(r".*update.*|.*latest.*")
 
     while True:
         print("Listening...")
@@ -161,8 +162,11 @@ def main():
             print("Exit")
             break
 
+        if update.match(text):
+            update_via_cmd()
+
 
 if __name__ == "__main__":
     update_via_cmd()
-    text_to_speech("Hi I am Corona Bot, what do you want mother fucker thai-yo-lee!!!")
+    text_to_speech("Hi I am Corona Bot, ask me!!!")
     main()
